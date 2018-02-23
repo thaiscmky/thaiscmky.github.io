@@ -1,0 +1,404 @@
+@import url(https://fonts.googleapis.com/css?family=Andika|Architects+Daughter|Bangers);
+
+html, body {
+    height: calc(100% - 9em);
+}
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    background: #f5f5f5 url("../images/spiration-dark.png") repeat;
+    color: #777;
+    text-align: center;
+}
+
+@keyframes dropin {
+    0% {
+        margin-top: -8em;
+    }
+
+    70% {
+        margin-top: 1em;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, figcaption
+{
+    color: #7c908f;
+    border-bottom: 0.07em solid #ccc;
+    font-family: 'Bangers',  Helvetica, sans-serif;
+    letter-spacing: 0.075em;
+}
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.3em; }
+h3 { font-size: 1.7em; letter-spacing: 0.09em; }
+h4 { font-size: 1.5em; letter-spacing: 0.09em ; }
+
+.one-column {max-width: 960px;min-width: 265px;margin: auto;}
+
+#content_container .one-column, 
+#content_container .two-column-larger,
+#content_container .two-column-smaller{
+    float:left;
+    border: 1px solid #dddddd;
+}
+
+#content_container .two-column-larger {
+    width: 650px;
+    margin-right: 1.8em;
+    margin-top: 2em;
+}
+#content_container .two-column-smaller {width: 270px;margin-top: 2em;}
+
+header, nav { text-align: left;}
+nav {
+    padding: 1.5em 0;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 0 1em;
+    text-decoration: none;
+    font-family: 'Andika';
+    font-size: 1.2em;
+}
+header nav a:link, header nav a:visited {
+    color: #ffe8a9;
+}
+header nav a:hover {
+    color: #67fff7;
+}
+header nav a:focus, header nav a:active {
+    color: #ffa500;
+}
+
+header #sitename {
+    float:left;
+    animation: dropin 5s;
+}
+header nav {
+    float: right;
+    background-color: #37b1dc;
+    right: -0.75em;
+    outline: #000 solid 0.5em;
+}
+
+#top_container, #bottom_container{
+    width: 100%;
+}
+#top_container
+{
+    position: fixed;
+    top:0;
+    z-index: 99999;
+    border-bottom: 2px solid #666;
+    background: #000000 url(../images/banner_narrower.jpg) no-repeat bottom center;
+    background-size: 30em;
+}
+#content_container {
+    margin: 8em auto 3em auto;
+    text-align: left;
+    min-height: 100%;
+    position: relative;
+}
+#bottom_container
+{
+    background-color: #212121;
+    border-top: 0.25em solid #000000;
+    border-bottom: 0.25em solid #000000;
+    width: 100%;
+    color: #ccc;
+    margin-top: 1.5em;
+    height: 5em;
+    clear:both;
+    position:relative;
+}
+#sitename, #sitename h1, #sitename h2{
+    color: #37b1dc;
+    border-bottom: none;
+}
+#sitename{
+    background-color: #f7e3a7;
+    display: inline-block;
+    padding: 0.2em 2em;
+    outline: #d8cf9b 0.5em solid;
+}
+
+main {
+    background-color: #fff;
+}
+
+article, form{
+    padding: 2em;
+    margin: 0.5em 0;
+}
+
+article:first-child, 
+article:first-child h1,
+article:first-child h2,
+.contact-page main h1:first-of-type,
+.contact-page main h2:first-of-type
+{
+    margin-top: 0;
+}
+
+article p {
+    margin: 1em 0;
+    line-height: 1.8em;
+}
+
+article img {
+    margin: 0.5em 1em;
+    border: 0.5em #000 solid;
+}
+
+.about-page article h2+img {
+    float: left;
+    margin-left: 0;
+}
+
+input {
+    border: 1px solid #dddddd;
+    padding: 0.5em;
+    margin: 0.5em auto auto;
+    width: 95%;
+}
+
+textarea {
+    width: 95%;
+    height: 200px;
+    margin: 0.5em auto auto;
+}
+
+input[type="submit"] {
+    padding: 0.5em 1.5em;
+    background-color: #4aaaa5;
+    color: #fff;
+    width: 8em;
+}
+
+input[type="submit"]:hover {
+    background-color: #327774;
+    cursor: pointer;
+}
+
+.portfolio-page figure {
+    width: 42%;
+    display: inline-block
+}
+
+.portfolio-page figure img {
+    margin: 0;
+    position: relative;
+    border: 0.25em solid #000;
+}
+
+.portfolio-page figure:nth-of-type(1n) {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.portfolio-page figure:nth-of-type(2n) {
+    margin-right: 0;
+    padding-right: 0;
+    left: 2%;
+    position: relative;
+}
+
+.portfolio-page figcaption {
+    background-color: #212121;
+    color: #fff;
+    padding: 0.9em;
+    width: 10.5em;
+    text-align: center;
+    margin-top: -2.7em;
+    z-index: 9999;
+    position: absolute;
+    margin-left: -0.5em;
+    letter-spacing: 0.05em;
+    font-size: 1.12em;
+    opacity: 0.95;
+}
+
+aside {
+    margin-left: 0.3%;
+    background-color: #fff;
+}
+#socialmedia {
+    margin: 1.25em;
+}
+#socialmedia ul{
+    list-style: none;
+    padding-left:0;
+    text-align: center;
+}
+#socialmedia ul li{
+    display:inline-block;
+    margin-top: -2em;
+}
+#socialmedia ul li a{
+    display:inline-block;
+    background: url('../images/cozmo_normal.png') center bottom no-repeat;
+    background-size: 4em;
+    padding: 3em 0.26em 0 0.26em;
+    position: relative;
+}
+#socialmedia ul li a:hover{
+    top: -3.2em;
+    margin-bottom: -3.2em;
+    padding: 0 0.26em 3.2em 0.26em;
+    background-position: center 0.05em;
+}
+footer {
+    padding: 1em;
+    line-height: 3em;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*** Stylizing ***/
+.skew {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: skew(-16deg, 0);
+    position : relative;
+}
+.skew a {
+    -webkit-transform : skew(16deg, 0);
+    position          : relative;
+}
+
+/**** Media Queries ***/
+
+@media only screen and (max-width: 980px){
+
+    #content_container .two-column-larger{
+        width: 60vw;
+        margin-left: 3.2vw;
+    }
+
+    article img:first-of-type {
+        float:none;
+        width:95%;
+        margin-bottom: 5%;
+    }
+
+    .portfolio-page figure {
+        width: 100%;
+    }
+
+    .portfolio-page figcaption {
+        width: 45vw;
+        margin-top: -3em;
+        margin-left: -0.9em;
+    }
+}
+
+@media only screen and (max-width: 895px){
+
+    #content_container .two-column-smaller{
+        width: 60vw;
+        margin-left: 3.2vw;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    #content_container .two-column-larger{
+        width:93%;
+    }
+
+    #content_container .two-column-smaller{
+        width: 93%;
+        margin-left: 3.2vw;
+    }
+
+    article img:first-of-type {
+        width:40vw;
+        margin-bottom: 1%;
+        margin-right: 5%;
+    }
+
+    #sitename {
+        display: inline-block;
+        padding: 0.5em 1em;
+    }
+
+    header nav {
+        padding: 1em 0;
+        right: -0.4em;
+    }
+
+    header nav a {
+        font-size: 1em;
+    }
+
+    .portfolio-page figure{
+        width: 35vw;
+    }
+    .portfolio-page figure img { width: 100%; }
+
+    .portfolio-page figcaption {
+        width: 30vw;
+        margin-top: -2.5em;
+        margin-left: -0.9em;
+    }
+}
+
+@media only screen and (max-width: 640px){
+
+    @keyframes dropin {
+        0% {
+            margin-top: -8em;
+        }
+
+        40% {
+            margin-top: 4em;
+        }
+
+        100% {
+            margin-top: 0;
+
+        }
+    }
+
+    .about-page article h2+img, article img {
+        float:none;
+        width:95%;
+    }
+
+    #content_container {
+        margin-top: 11em;
+        margin-bottom: 1em;
+    }
+
+    #top_container {
+        background-position: 100% center;
+    }
+
+    header nav{
+        width: 70vw;
+        margin-bottom: -2em;
+        opacity: 0.96;
+        font-weight: bold;
+    }
+
+    header #sitename {
+        opacity: 0.96;
+    }
+
+    .portfolio-page figure{
+        width: 95%;
+    }
+
+    .portfolio-page figcaption {
+        width: 70%;
+    }
+
+}

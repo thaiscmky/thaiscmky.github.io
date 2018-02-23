@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
-<body class="home about-page">
+<body class="contact-page">
     <div id="top_container">
         <header class="one-column">
                 <div id="sitename">
@@ -26,20 +26,24 @@
     </div>
     <div id="content_container" class="one-column">
         <main class="two-column-larger">
-            <article>
-                <h2>About Me</h2>
-                <img src="./assets/images/meandcozmolive.jpg" width="300"/>
+            <form>
+                <h2>Contact</h2>
                 <p>
-                    Marshmallow jelly souffle pastry biscuit gummi bears tootsie roll
-                    gingerbread. Cotton candy muffin gingerbread fruitcake. Sweet roll
-                    souffle topping wafer croissant oat cake gummi bears.
+                   Name<br/>
+                   <input id="firstlast_name" value="John Smith"/>
                 </p>
                 <p>
-                    Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffle.
-                    Caramels biscuit gummi bears tiramisu chupa chups. Croissant maracoon
-                    cotton candy cake pudding.
+                    Email<br/>
+                    <input id="email" value="example@gmail.com"/>
                 </p>
-            </article>
+                <p>
+                    Message<br/>
+                    <textarea rows="4" cols="50"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Submit"/>
+                </p>
+            </form>
         </main>
         <aside class="two-column-smaller">
             <!--TODO: add sidebar heading, but hide from rendered view-->
