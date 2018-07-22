@@ -122,6 +122,13 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 0.6em;
 }
 
+.jumbotron a, #techskills a {
+  color: #d8ff41;
+  text-decoration: underline;
+}
+
+.jumbotron a:hover, #techskills a:hover{ text-decoration: none; color: #fff26d;}
+
 /*
  * Footer
  */
