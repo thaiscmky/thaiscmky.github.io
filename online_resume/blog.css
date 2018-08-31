@@ -27,6 +27,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.project a:link{
+  text-decoration: underline;
+  color:#0E62CD;
+}
+.project a:hover{
+  color: #2c5b94;
+}
+
 .nav-scroller {
   position: relative;
   z-index: 2;
